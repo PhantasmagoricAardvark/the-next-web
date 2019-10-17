@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: "Open Sans";
 }
 ol, ul {
 	list-style: none;
@@ -40,4 +41,771 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.nav-menu {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+}
+
+.nav-logo {
+	background: linear-gradient(to bottom right, #c09, #f42 85%);
+	grid-row-start: span 2;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+
+.nav-logo img {
+	height: 1rem;
+}
+
+.nav-1 {
+	background: black;
+	color: grey;
+	padding: 0 13px;
+	display: flex;
+}
+
+.nav-1-about {
+	display: flex;
+	margin-left: auto;
+
+}
+
+.nav-1 span {
+	margin: 8px 5px;
+	font-size: 12px;
+}
+
+.nav-2 {
+	color: #aaa;
+	display: flex;
+	font-size: 12px;
+	align-items: center;
+}
+
+.nav-2 span {
+	padding: 10px;
+}
+
+.nav-2 i {
+	color: #bebebe;
+	padding: 16px;
+	margin-left: auto;
+	border-right: 1px solid #aaa;
+	transform: rotateY(180deg);
+}
+
+.nav-message {
+	background: #ffdd33;
+	padding: 0 15px;
+	grid-column-start: span 2;
+	display: grid;
+	grid-template-columns: 100px 1fr;
+}
+
+.nav-message p {
+	font-size: 12px;
+	padding: 10px 0;
+	grid-column-start: 2;
+}
+
+.headlines {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 5px;
+	margin: 0 5px;
+	margin-bottom: 10px;
+	margin-top: 2px;
+}
+
+.headlines-small-1, .headlines div:last-of-type {
+	width: 100%;
+	height: 200px;
+}
+
+.headlines-big {
+	background-image: linear-gradient( rgba(0,0,0, 0.4), rgba(0,0,0,1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-design112-796x417.png");
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	align-content: end;
+	grid-gap: 20px;
+	padding: 20px 10px;
+}
+
+.headlines-big h1 {
+	font-size: 50px;
+	color: white;
+	font-weight: bold;
+}
+
+.headlines-big span:first-of-type {
+	color: white;
+}
+
+.headlines-big span:last-of-type {
+	color: grey;
+	font-size: 14px;
+}
+
+.headlines-small-1 {
+	background-image: linear-gradient( rgba(0,0,0, 0.4), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Untitled-design-83-796x417.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	align-content: end;
+	grid-gap: 10px;
+	padding: 20px 10px;
+	box-sizing: border-box;
+}
+
+.headlines-small-1 h1, .headlines div:last-of-type h1 {
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+}
+
+.headlines-small-1 span:first-of-type {
+	color: white;
+}
+
+.headlines-small-1 span:last-of-type, .headlines div:last-of-type span:last-of-type {
+	color: grey;
+	font-size: 14px;
+}
+
+
+.headlines div:last-of-type {
+	background-image: linear-gradient( rgba(0,0,0, .4), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/facebook-the-pirate-bay-links-blocked-796x417.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	align-content: end;
+	grid-gap: 10px;
+	padding: 20px 10px;
+	box-sizing: border-box;
+}
+
+
+.headlines div:last-of-type span:first-of-type {
+	color: white;
+}
+
+
+.latest-news, .special-event, .latest-funding, .latest-deals {
+	display: grid;
+	grid-gap: 20px;
+	padding: 0 20px;
+}
+
+.latest-news {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+.latest-news .latest-news-container, .special-event-container, .latest-deals-container {
+	background: unset;
+	display: grid;
+	grid-gap: 8px;
+	height: unset;
+	align-content: baseline;
+}
+
+.latest-news-image, .special-event-image, .latest-deals-image {
+	height: 15vw;
+	background-position: center;
+	background-size: cover; 
+}
+
+.latest-news-text, .special-event-text, .latest-deals-text {
+	background-image: unset !important;
+	height: unset !important;
+}
+
+.latest-news-text p, .special-event-text p, .latest-deals-text p {
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.latest-news-text span, .special-event-text span {
+	font-size: 14px;
+	color: darkgrey;
+}
+
+.latest-news div:nth-of-type(1) div {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/bl3feat-480x270.jpg");
+}
+
+.latest-news div:nth-of-type(2) div {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Untitled-design-86-516x270.jpg");
+ }
+
+.latest-news div:nth-of-type(3) div {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/fbot-botnet-good-bitcoin-cryptocurrency-cryptojacking-malware-480x270.jpg");
+}
+.latest-news div:nth-of-type(4) div {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Untitled-design-85-516x270.jpg");
+}
+.latest-news div:nth-of-type(5) div {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Screenshot_20191002-113313-489x270.png");
+}
+.latest-news div:nth-of-type(6) div {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Windows-10X-517x270.jpg");
+}
+.latest-news div:nth-of-type(7) div {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Russia-bitcoin-bitcoin-survey-blockchain-cryptocurrency-digtial-asset-480x270.png");
+}
+.latest-news div:nth-of-type(8) div {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Screenshot_20191002-104628-461x270.png");
+}
+
+.special-event div:nth-of-type(1) .special-event-image {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/597d12de5f1604078c51be9c3b365e60-452x270.jpg");
+}
+
+.special-event div:nth-of-type(2) .special-event-image {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/EF4hwt-W4AILDL9-480x270.jpeg");
+}
+
+.special-event div:nth-of-type(3) .special-event-image {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Windows-10X-517x270.jpg");
+}
+
+.special-event div:nth-of-type(4) .special-event-image {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/MicrosoftSurfaceProx-512x270.jpg");
+}
+
+.latest-news h1, .special-event h1, .latest-funding-header, .latest-deals-header {
+	grid-column-start: span 4;
+	font-size: 20px;
+	color: #f42;
+	font-weight: bold;
+}
+
+.latest-news, .special-event, .latest-funding, .latest-deals {
+	margin-top: 20px;
+}
+
+.latest-funding {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	font-size: 13px;
+}
+
+.latest-funding-header, .latest-deals-header {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+.latest-funding-header-spans, .latest-deals-header span {
+	margin-left: auto;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.latest-funding-container {
+	display: grid;
+	grid-template-rows: 25px 50px auto 1fr;
+}
+
+.latest-funding-container img {
+	width: 55px;
+	position: absolute;
+	margin: 0.8rem;
+}
+
+.latest-funding-container div:nth-of-type(1) {
+	background: #f42;
+	display: flex;
+	align-items: center;
+	padding-left: 5rem;
+}
+
+.latest-funding-container div:nth-of-type(2) {
+	background-color: mistyrose;
+	padding-left: 5rem;
+	line-height: 18px;
+	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.latest-funding-container div:nth-of-type(2) h1 {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.latest-funding-payments {
+	padding: 1rem 1.5rem;
+	border-bottom: 1px solid #f42; 
+	background: #fffaf8;
+	line-height: 24px;
+	display: flex;
+	flex-direction: column;
+}
+
+.latest-funding-container .latest-funding-text {
+	background: #fffaf8;
+	padding: 1rem 1rem;
+}
+
+
+
+.articles {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	margin: 30px 0px;
+	padding: 0 20px;
+}
+
+.articles-container {
+	width: 100%;
+	display: grid;
+	grid-gap: 2px;
+	grid-template-rows: 40px 22vw auto 1fr;
+}
+
+.articles-container h1 {
+	color: #f42;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.articles-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	align-content: end;
+	grid-gap: 10px;
+	padding: 20px 10px;
+	box-sizing: border-box;
+}
+
+.articles-image-1 {
+	background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/instaDMs1-368x276.png");
+}
+.articles-image-2 {
+		background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Google-Pixel-4-368x276.jpg");
+}
+.articles-image-3 {
+	background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/09/angryrobot-368x276.jpg");
+}
+.articles-image-4 {
+	background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Annotation-2019-09-19-121214-368x276.png");
+}
+.articles-image-5 {
+	background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Untitled-design117-368x276.png");
+}
+.articles-image-6 {
+	background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/github-ice-trump-microsoft-contract-368x276.jpg");
+}
+.articles-image-7 {
+	background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Google-Assistant-phone-line-368x276.jpg");
+}
+.articles-image-8 {
+		background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0, 1) ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2011/03/horizon-zero-dawn-368x276.jpeg");
+}
+
+
+
+.articles-image span:first-of-type {
+	color: white;
+}
+
+.articles-image h1 {
+	font-size: 21px;
+	color: white;
+	font-weight: bold;
+}
+
+.articles-image span:last-of-type {
+	color: grey;
+	font-size: 14px;
+}
+
+.articles-latest {
+	background-color: #fff4f2;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 3fr 1fr;
+	height: 8vw;
+	font-size: 14px;
+}
+
+.articles-latest-image {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/call_of_duty_mobile_how_to_use_ps4_and_xbox_one_controller_on_ip_1350095.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	grid-row-start: span 2; 
+}
+
+.articles-latest-text {
+	padding-top: 10px;
+	padding-left: 10px;
+	color: #f42;
+	font-weight: bold;
+}
+
+.articles-latest-text span {
+	display: block;
+	padding-bottom: 5px;
+	font-weight: normal;
+}
+
+.articles-list {
+	background: white;
+	list-style-position: inside;
+	color: grey;
+	font-size: 14px;
+}
+
+.articles-list li {
+	padding: 10px 0;
+	border-bottom: 1px solid darkgrey;  
+}
+
+.latest-deals {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-bottom: 40px;
+}
+
+
+.latest-deals-container {
+	height: unset;
+	background: unset; 
+	grid-gap: 10px;
+}
+
+.latest-deals-text p {
+	margin-bottom: 10px;
+}
+
+.latest-deals-span {
+	text-decoration: line-through; 
+	font-size: 12px;
+	color: darkgrey;
+}
+
+.latest-deals-line {
+	color: grey;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.latest-deals-image {
+	height: 18vw;
+}
+
+.latest-deals-image-1 {
+	background-image: url("https://cdnp1.stackassets.com/f7709e12aac26b1c2a852d303c44d0656454a0d3/store/30af9b96b5fe3bcd63b1b16f6d761e06d4c2421a7fa37ecd864590f1899b/sale_22049_primary_image.jpg");
+}
+
+.latest-deals-image-2 {
+	background-image: url("https://cdnp3.stackassets.com/bed8a337b83198aecc1eaa97708a1b437deda193/store/3401bc6dc8fdbd03d86935b56cd418289be7709784a3817f7fdbaa862678/sale_22157_primary_image.jpg");
+}
+
+.latest-deals-image-3 {
+	background-image: url("https://cdnp3.stackassets.com/a63f9a918b821c95e798a8a68ea959724b33b7f3/store/2730630ad405564dff3d69229e3fac86b328dee912982179d47815ed0e30/sale_22289_primary_image.jpg");
+}
+
+.latest-deals-image-4 {
+	background-image: url("https://cdnp0.stackassets.com/0bcaf472e484efc5812ba81caff99e8d92b3e6e9/store/a608033f5bd5c0926a52360990ea5bd8a7241593db592e096d16df200727/product_30218_product_shots4.jpg");
+}
+
+.latest-deals-image-5 {
+	background-image: url("https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg");
+}
+
+.latest-deals-image-6 {
+	background-image: url("https://cdnp3.stackassets.com/80ea22e2919f5826b2765ad58a70ffdb0b1e217a/store/de89b6bc5feee838ebfcc0ae7ccc32f5e1556f453b6f538292a1e60842a4/sale_22062_primary_image.jpg");
+}
+
+.latest-deals-image-7 {
+	background-image: url("https://cdnp1.stackassets.com/b2fe3caad88fe80c5e90175eb47c2f9135823b22/store/5b299df7c76a3b882898a7440d19c18209fdff6ace2afb280cfd35b81764/sale_22290_primary_image.jpg");
+}
+
+.latest-deals-image-8 {
+	background-image: url("https://cdnp2.stackassets.com/2de045f5c08675c61ee700230f0604fdd2e3e557/store/385003e89ed9c8e0938a35490994921cbd3a1c1ecde92e3f84376549f152/sale_18127_primary_image.jpg");
+}
+
+.footer-links {
+	display: flex;
+	padding: 2rem 1rem;
+	background: #131313;
+	align-items: center;
+	flex-direction: column;
+}
+
+.icons {
+	display: flex;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.icons div {
+	height: 2.5rem;
+	width: 2.5rem;
+	background: #333333;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 8px;
+}
+
+i {
+	font-size: 1rem;
+	color: white;
+}
+
+.footer-links-text {
+	color: grey;
+	font-size: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footer-links-text span {
+	margin: 5px;
+	letter-spacing: -0.7px;
+}
+
+.footer-text {
+	background: black;
+	padding: 2rem;
+	color: grey;
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+}
+
+.footer-text p {
+	margin: 0 2px;
+}
+
+@media (min-width: 1014px) {
+	.nav-logo {
+		display: none;
+	}
+
+	.nav-menu {
+		grid-template-columns: unset;
+	}
+
+	.nav-message {
+		grid-column-start: unset;
+		display: unset;
+	}
+}
+
+@media (max-width: 1014px) {
+
+	.headlines-small-1 h1, .headlines div:last-of-type h1 {
+		font-size: 20px;
+	}
+
+	.headlines-small-1 span:last-of-type, .headlines div:last-of-type span:last-of-type {
+		font-size: 12px;
+	}
+
+	.latest-news, .special-event, .latest-funding, .latest-deals {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+
+	.latest-news .latest-news-container, .special-event-container {
+		height: unset;
+	}
+
+	.latest-news-image, .special-event-image, {
+		height: 15vw;
+	}
+
+	.latest-deals-image {
+		height: 20vw;
+	}
+
+	.latest-news h1, .special-event h1, .latest-funding h1, .latest-deals-header {
+		grid-column-start: span 3;
+	}
+
+	.latest-funding-header {
+		align-items: unset;
+		flex-direction: column
+	}
+
+	.latest-funding-header h1 {
+		margin-bottom: 10px;
+	}
+
+	.latest-funding-header-spans {
+		margin-left: unset;
+	}
+
+	.latest-funding-container-4 {
+		display: none !important;
+	}
+
+	.articles {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.articles-container {
+		grid-template-rows: 40px 33vw auto 1fr;
+	}
+
+	.articles-latest {
+		height: 10vw;
+	}
+
+}
+
+@media (max-width: 812px) {
+	.nav-1-about {
+		display: none;
+	}
+}
+
+
+@media (max-width: 760px) {
+	.nav-1 {
+		display: none;
+	}
+	
+	.nav-2-links {
+		display: none;
+	}
+
+	.nav-message {
+		grid-template-columns: unset;
+		padding: unset;
+	}
+
+	.nav-message p {
+		font-size: 11px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.headlines {
+		grid-template-columns: 1fr;
+	}
+
+	.headlines-small-1, .headlines div:last-of-type {
+		width: 100%;
+		height: 150px;
+	}
+
+	.headlines-big {
+		grid-column-start: unset;
+		grid-row-start: unset;
+	}
+
+	.headlines-big, .headlines-small-1, .headlines div:last-of-type {
+		grid-gap: 5px;
+		padding: 10px;
+	}
+
+	.headlines-big h1, .headlines-small-1 h1, .headlines div:last-of-type h1 {
+		font-size: 20px;
+	}
+
+	.headlines-big span:last-of-type, .headlines-small-1 span:last-of-type, .headlines div:last-of-type span:last-of-type {
+		font-size: 11px;
+	}
+
+
+	.latest-news, .special-event, .latest-funding, .latest-deals, .articles {
+		grid-template-columns: 1fr;
+	}
+
+	.latest-news-container, .special-event-container, .latest-deals-container {
+		height: unset;
+		grid-template-columns: 75px 1fr;
+		grid-gap: unset;
+		column-gap: 8px;
+	}
+
+	.latest-news-image, .special-event-image, .latest-deals-image {
+		grid-row-start: span 2; 
+		height: 75px;
+		width: 75px;
+	}
+
+	.latest-news-text p, .special-event-text p, .latest-deals-text p {
+		font-size: 13px;
+		margin-bottom: 5px;
+	}
+
+	.latest-news-text span, .special-event-text span, .latest-deals-image span {
+		font-size: 11px;
+	}
+
+	.latest-news h1, .special-event h1, .latest-funding h1,.latest-funding-header, .latest-deals-header {
+		grid-column-start: span 1;
+	}
+
+
+	.latest-funding-header-spans {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	.latest-funding-header-spans span:nth-of-type(2) {
+		margin: 10px 0;
+	}
+
+	.latest-funding-container {
+		grid-template-rows: 30px 50px 1fr auto;
+	}
+
+	.articles-container {
+		grid-template-rows: 40px 65vw auto 1fr;
+	}
+
+	.articles-latest {
+		height: 90px;
+		grid-template-columns: 6fr 90px;
+	}
+
+	.icons {
+		justify-content: center;
+	}
+
+	.icons div {
+		margin: 0 3px;
+	}
+
+	.rss-icon {
+		display: none !important;
+	}
+
+	.footer-links-about {
+		display: none;
+	}
+
+	.footer-text {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.footer-text p {
+		margin: 4px 0;
+	}
 }
