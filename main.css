@@ -598,7 +598,7 @@ i {
 	margin: 0 2px;
 }
 
-@media (min-width: 1014px) {
+@media only screen and (min-width: 1014px) {
 	.nav-logo {
 		display: none;
 	}
@@ -613,7 +613,7 @@ i {
 	}
 }
 
-@media (max-width: 1014px) {
+@media only screen and (max-width: 1014px) {
 
 	.headlines-small-1 h1, .headlines div:last-of-type h1 {
 		font-size: 20px;
@@ -675,14 +675,14 @@ i {
 
 }
 
-@media (max-width: 812px) {
+@media only screen and (max-width: 812px) {
 	.nav-1-about {
 		display: none;
 	}
 }
 
 
-@media (max-width: 760px) {
+@media only screen and (max-width: 760px) {
 	.nav-1 {
 		display: none;
 	}
